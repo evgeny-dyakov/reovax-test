@@ -429,7 +429,7 @@ body {
   font-size: var(--main-fs);
 }
 
-.service__container {
+.service__wrapper {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
