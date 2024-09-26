@@ -1,0 +1,49 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 1440px;
+  margin: 0;
+  padding: 151px 0 0;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.h1-title,
+.h2-title,
+.h3-title {
+  margin: 0;
+  font-family: var(--main-f);
+  font-weight: 600;
+  color: hsl(var(--dark-primary));
+}
+
+.h1-title {
+  font-size: 48px;
+
+  span {
+    color: hsl(var(--green));
+  }
+}
+
+.h2-title {
+  font-size: 42px;
+}
+
+.h3-title {
+  font-size: 20px;
+}

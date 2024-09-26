@@ -1,0 +1,30 @@
+.service {
+  padding: 20px 0 100px;
+
+  font-family: var(--main-f);
+  font-size: var(--main-fs);
+}
+
+.service__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  padding: 44px 0 42px;
+
+  border-top: 2px solid hsl(var(--orange));
+  border-bottom: 2px solid hsl(var(--orange));
+}
+
+.service__text {
+  max-width: 766px;
+  padding: 0 0 0 20px;
+
+  p {
+    margin: 0 0 32px;
+
+    &:last-child {
+      margin: 0;
+    }
+  }
+}

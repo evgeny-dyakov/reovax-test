@@ -1,0 +1,142 @@
+.banner {
+  position: relative;
+  padding: 1px 0;
+  background: hsl(var(--blue));
+  overflow: hidden;
+}
+
+.banner__container {
+  position: relative;
+}
+
+.banner-wrapper {
+  width: 514px;
+  margin: 100px 0 120px;
+}
+
+.banner__h1-title {
+  margin: 0 0 52px;
+}
+
+.banner__links {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 0 0 72px;
+}
+
+.banner-img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 838px;
+  height: 100%;
+  padding: 0 0 0 60px;
+  background: #c6d7ca;
+  clip-path: circle(680px at 680px 50%);
+
+  img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    clip-path: circle(620px at 620px 50%);
+  }
+}
+
+.banner-video {
+  position: absolute;
+  z-index: 10;
+  top: -3%;
+  left: 44%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 150px;
+  background: none;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+
+  .banner-video__play,
+  .banner-video__text {
+    transition: var(--transition);
+  }
+
+  .banner-video__play path,
+  .banner-video__text path {
+    transition: var(--transition);
+  }
+
+  &:hover {
+    .banner-video__play {
+      scale: 1.2;
+    }
+
+    .banner-video__text {
+      scale: 0.9;
+    }
+
+    .banner-video__play path {
+      fill: hsl(var(--orange));
+      stroke: hsl(var(--orange));
+    }
+
+    .banner-video__text path {
+      fill: hsl(var(--orange));
+    }
+  }
+
+  // img {
+  //   width: 40px;
+  //   margin: 0 0 0 7px;
+  //   transition: var(--transition);
+  // }
+
+  // &:hover {
+  //   img {
+  //     scale: 1.1;
+  //   }
+
+  //   &::before {
+  //     animation-play-state: paused;
+  //   }
+  // }
+
+  // &::before {
+  //   content: '';
+  //   position: absolute;
+  //   top: 50%;
+  //   left: 50%;
+  //   width: 130%;
+  //   height: 130%;
+  //   translate: -50% -50%;
+  //   background: url('/img/video-text.svg') no-repeat center/cover;
+  //   animation: spin 25s linear infinite;
+  // }
+}
+
+.banner-video__play {
+  margin: 0 0 0 8px;
+}
+
+.banner-video__text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  animation: spin 25s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    rotate: 360deg;
+  }
+
+  to {
+    rotate: 0deg;
+  }
+}

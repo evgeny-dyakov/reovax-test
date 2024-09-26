@@ -1,0 +1,19 @@
+$some: 'some';
+
+:root {
+  --main-f: 'opensans', sans-serif;
+
+  --main-fs: 16px;
+  --small-fs: 12px;
+
+  --light: 0, 0%, 100%;         // #ffffff
+  --dark-primary: 0, 0%, 12%;   // #1f1f1f
+  --dark-secondary: 0, 0%, 30%; // #4c4c4c
+  --orange: 20, 95%, 50%;       // #f95707
+  --peach: 20, 100%, 98%;       // #fff7f3
+  --green: 134, 69%, 20%;       // #105720
+  --blue: 135, 20%, 96%;        // #f3f7f4
+  --gray: 0, 0%, 91%;           // #e8e8e8
+
+  --transition: .3s ease;
+}

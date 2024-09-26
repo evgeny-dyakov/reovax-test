@@ -1,0 +1,37 @@
+.advantages {
+  padding: 62px 0 80px;
+
+  font-family: var(--main-f);
+  font-size: var(--main-fs);
+}
+
+.advantages__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 24px;
+
+  margin: 0;
+  padding: 0;
+
+  list-style-type: none;
+}
+
+.advantages__item {
+  padding: 20px 30px 24px;
+
+  border: 1px solid hsl(var(--gray));
+  border-radius: 12px;
+}
+
+.advantages__item-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  margin: 0 0 12px;
+}
+
+.advantages__text {
+  margin: 0;
+}

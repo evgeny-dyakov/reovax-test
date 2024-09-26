@@ -1,0 +1,45 @@
+.test-btn {
+  display: flex;
+  gap: 10px;
+}
+
+.button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  min-height: 50px;
+  padding: 12px 32px;
+  font-family: var(--main-f);
+  font-size: var(--main-fs);
+  font-weight: 600;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  background: none;
+  border: 1px solid black;
+  border-radius: 23px;
+  cursor: pointer;
+  transition: var(--transition);
+
+  &--fill {
+    color: hsl(var(--light));
+    border: none;
+    background: hsl(var(--orange));
+  }
+
+  &--outline {
+    color: hsl(var(--orange));
+    border: 1px solid hsl(var(--orange));
+  }
+
+  &--search {
+    color: hsl(var(--orange));
+    background: hsl(var(--peach));
+    border: none;
+  }
+
+  &:hover {
+    opacity: .8;
+  }
+}
